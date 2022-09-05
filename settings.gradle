@@ -1,0 +1,4 @@
+rootProject.name = 'stduy-multimodule'
+include 'study-hj-domain'
+include 'study-hj-app-web'
+
