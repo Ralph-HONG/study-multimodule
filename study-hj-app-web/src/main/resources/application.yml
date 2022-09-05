@@ -1,0 +1,35 @@
+server:
+  port: 11000
+  servlet:
+    context-path: /study-multi
+
+management:
+  endpoint.health.group.instance.include: diskSpace,ping
+
+---
+spring:
+  config:
+    activate:
+      on-profile: local
+server.port: 11000
+
+---
+spring:
+  config:
+    activate:
+      on-profile: dev
+server.port: 8080
+
+---
+spring:
+  config:
+    activate:
+      on-profile: stg
+server.port: 8080
+
+---
+spring:
+  config:
+    activate:
+      on-profile: prod
+server.port: 8080
