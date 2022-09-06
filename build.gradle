@@ -50,6 +50,8 @@ subprojects {
         implementation "org.mapstruct:mapstruct:${mapStructVersion}"
         implementation "org.projectlombok:lombok:${lombokVersion}"
         implementation "org.projectlombok:lombok-mapstruct-binding:${lombokMapstructBindingVersion}"
+        implementation "mysql:mysql-connector-java"
+        implementation "org.springframework.boot:spring-boot-starter-data-jpa"
 
         testImplementation "org.junit.jupiter:junit-jupiter-engine"
         testImplementation "org.junit.jupiter:junit-jupiter-api"
