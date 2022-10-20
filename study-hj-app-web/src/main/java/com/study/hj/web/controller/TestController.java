@@ -14,6 +14,7 @@ public class TestController {
 
     @GetMapping(value = "/{id}")
     public ResponseEntity<?> testGet(@PathVariable String id) {
+        log.info("GIT 수정");
         return ResponseEntity.ok()
                 .body(TestDTO.builder()
                         .id(id)
@@ -26,5 +27,6 @@ public class TestController {
     public ResponseEntity<?> testPost(@RequestBody TestDTO testDTO) {
         return ResponseEntity.ok()
                 .body(testDTO);
+
     }
 }
